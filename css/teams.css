@@ -13,6 +13,9 @@ h2 {
   font-weight: 500;
   font-style: normal;
 }
+h2 {
+  font-size: 23px !important;
+}
 a {
   color: #ffa600;
 }
