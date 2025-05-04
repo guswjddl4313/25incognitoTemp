@@ -7,6 +7,11 @@ body {
     background: #221b82 !important;
   }
 }
+#page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 h1,
 h2 {
   font-family: "Black Han Sans", sans-serif;
@@ -22,7 +27,13 @@ a {
   margin-bottom: 0.8rem;
   color: #ffffff; /* adjust as needed */
 }
+
+#fh5co-header {
+  height: auto !important;
+  flex: 1 0 auto; /* 헤더가 가변적으로 늘어나고 footer는 하단 고정됨 */
+}
 #fh5co-footer {
+  flex-shrink: 0;
   position: relative;
   overflow: hidden; /* 넘치는 이미지 잘라내기 */
   background-color: #0c092d; /* 필요 시 배경색 */
