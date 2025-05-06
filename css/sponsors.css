@@ -3,35 +3,29 @@
 
 .sponsors-header {
   padding: 120px 0 60px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url('../images/hero_1.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: white;
   text-align: center;
 }
 
 .sponsors-header h1 {
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 48px;
   margin-bottom: 20px;
-  color: white;
 }
 
 .sponsors-header p {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.8);
   max-width: 800px;
   margin: 0 auto;
 }
 
 .sponsors-section {
   padding: 40px 0;
-  background: #f8f9fa;
 }
 
 .sponsor-title {
-  color: white;
   font-size: 36px;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -63,21 +57,20 @@
   object-fit: contain;
   display: block;
   filter: none;
-  background: none;
-  transition: none;
 }
 
 .tier-badge {
-  width: 60px;
+  width: 40px;
   height: auto;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 .sponsor-pair {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin: 0 60px;
 }
 
 .multi-sponsors {
@@ -89,61 +82,16 @@
 }
 
 .sponsor-name {
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 20px;
-  color: #333;
   margin: 10px 0;
 }
 
 .sponsor-description {
-  color: #666;
+  font-family: 'Black Han Sans', sans-serif;
   text-align: center;
   font-size: 16px;
   line-height: 1.6;
-}
-
-/* 반응형 디자인 */
-@media screen and (max-width: 768px) {
-  .sponsors-header h1 {
-    font-size: 36px;
-  }
-
-  .sponsors-header p {
-    font-size: 18px;
-  }
-
-  .sponsor-logo {
-    width: 80px;
-    height: 40px;
-    padding: 4px;
-  }
-
-  .tier-badge {
-    width: 50px;
-  }
-
-  .multi-sponsors {
-    gap: 15px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .sponsors-header h1 {
-    font-size: 28px;
-  }
-
-  .sponsor-logo {
-    width: 60px;
-    height: 30px;
-    padding: 2px;
-  }
-
-  .tier-badge {
-    width: 40px;
-  }
-
-  .multi-sponsors {
-    gap: 10px;
-  }
 }
 
 /* sponsors.html 전용 레이아웃만 추가, 색상/폰트/배경은 style.css 계승 */
@@ -154,6 +102,7 @@
   gap: 40px;
   margin: 30px 0;
 }
+
 .sponsor-card {
   background: transparent;
   border: none;
@@ -163,34 +112,128 @@
   align-items: center;
   justify-content: center;
 }
+
 .sponsor-logo {
   width: 150px;
   height: auto;
   margin: 10px;
 }
 
-@media (max-width: 768px) {
-  .sponsor-logo {
-    width: 80px;
-  }
-  .sponsor-grid {
-    gap: 20px;
-  }
-}
-
 .tier-title {
   font-size: 32px;
-  color: #333;
   margin-bottom: 0px;
   position: relative;
   padding-bottom: 22px;
 }
+
 .tier-title::after {
   content: '';
   display: block;
   width: 150px;
   height: 1px;
-  background: #111;
   margin: 20px auto 0 auto;
   border-radius: 1px;
+}
+
+a {
+  color: #ffa600;
+}
+
+.sponsors-header .container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+div,
+span,
+strong,
+em,
+th,
+td,
+input,
+button {
+  font-family: 'Black Han Sans', sans-serif !important;
+}
+
+#fh5co-logo,
+#fh5co-logo a {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+
+#fh5co-header h1 {
+  margin-top: 32px !important;
+  margin-bottom: 8px !important;
+}
+
+#fh5co-logo {
+  margin-bottom: 20px !important;
+}
+
+#fh5co-header p {
+  margin-bottom: 32px !important;
+}
+
+.fh5co-nav {
+  margin-bottom: 32px !important;
+}
+
+.sponsor-marquee {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  height: 120px;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+.sponsor-marquee-track {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.sponsor-pair {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.sponsor-logo {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.tier-badge {
+  height: 32px;
+  width: auto;
 }
