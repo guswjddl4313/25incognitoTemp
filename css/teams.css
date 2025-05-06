@@ -7,33 +7,33 @@ body {
     background: #221b82 !important;
   }
 }
-#page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 h1,
 h2 {
   font-family: "Black Han Sans", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
+h2 {
+  font-size: 23px !important;
+}
 a {
   color: #ffa600;
 }
-.description p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 0.8rem;
-  color: #ffffff; /* adjust as needed */
+.description ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
-
-#fh5co-header {
-  height: auto !important;
-  flex: 1 0 auto; /* 헤더가 가변적으로 늘어나고 footer는 하단 고정됨 */
+.left {
+  width: 50%;
+  float: left;
+}
+.right {
+  width: 50%;
+  float: right;
 }
 #fh5co-footer {
-  flex-shrink: 0;
   position: relative;
   overflow: hidden; /* 넘치는 이미지 잘라내기 */
   background-color: #0c092d; /* 필요 시 배경색 */
