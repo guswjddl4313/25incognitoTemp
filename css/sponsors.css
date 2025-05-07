@@ -169,10 +169,9 @@ button {
 
 #fh5co-logo,
 #fh5co-logo a {
-  font-family: 'Cormorant Garamond', serif !important;
-  font-weight: 700;
+  font-family: Georgia, serif !important;
+  font-weight: 700 !important;
   font-size: 64px;
-  letter-spacing: 2px;
 }
 
 #fh5co-header h1 {
