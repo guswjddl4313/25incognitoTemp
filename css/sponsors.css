@@ -53,7 +53,7 @@
   height: 60px;
   border-radius: 8px;
   padding: 8px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   object-fit: contain;
   display: block;
   filter: none;
@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0px;
   margin: 0 60px;
 }
 
@@ -116,7 +116,6 @@
 .sponsor-logo {
   width: 150px;
   height: auto;
-  margin: 10px;
 }
 
 .tier-title {
@@ -195,7 +194,7 @@ button {
   margin: 24px auto;
   display: flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255);
   border-radius: 8px;
   position: relative;
 }
@@ -215,20 +214,19 @@ button {
     transform: translateX(-50%);
   }
 }
-
 .sponsor-pair {
   display: inline-flex;
-  align-items: center;
-  margin-right: 40px;
+  align-items: left;
+  margin-right: 0px;
 }
 
 .sponsor-logo {
   height: 80px;
   width: auto;
-  margin-right: 10px;
 }
 
 .tier-badge {
-  height: 32px;
+  height: 80px;
   width: auto;
+  margin-left: 20px;
 }
